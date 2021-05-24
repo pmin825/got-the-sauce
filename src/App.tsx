@@ -1,11 +1,11 @@
-import OddsPage from "./pages/SauceIndex";
+import SauceIndex from "./pages/SauceIndex";
 
-function App() {
+const App: React.FC = () => {
     return (
         <div className="App">
-            <OddsPage />
+            <SauceIndex />
         </div>
     );
-}
+};
 
 export default App;

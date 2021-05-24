@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import NaviBar from "../components/NaviBar";
 import axios from "axios";
 
-import SauceItem from "./SauceItem";
+import SauceItem from "../components/SauceItem";
 
 import { Drink } from "../models/drink";
 

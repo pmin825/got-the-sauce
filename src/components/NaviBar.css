@@ -1,0 +1,13 @@
+.navbar  {
+    background-color: aqua;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+.navbar-light .navbar-brand {
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+}
+
+.navbar-light .navbar-brand:hover {
+    color: rgba(255, 0, 0, 0.842);
+}

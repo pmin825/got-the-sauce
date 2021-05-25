@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Button, Container, Row, Col } from "react-bootstrap";
+import { Card, Button, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import "./SauceItem.css";
 
@@ -13,13 +14,17 @@ const SauceItem: React.FC<SauceItemProps> = (props) => {
       <Row>
         {props.drinks.map((drink) => {
           return (
-            <Card key={drink.idDrink} style={{ width: "15rem" }}>
-              <Card.Img variant="top" src={`${drink.strDrinkThumb}`} />
-              <Card.Body>
-                <Card.Title>{drink.strDrink}</Card.Title>
-                <Button variant="primary">See Details</Button>
-              </Card.Body>
-            </Card>
+            <div key={drink.idDrink}>
+              <Card style={{ width: "15rem" }}>
+                <Card.Img variant="top" src={`${drink.strDrinkThumb}`} />
+                <Card.Body>
+                  <Card.Title>{drink.strDrink}</Card.Title>
+                  <Link to={`/${drink.idDrink}`}>
+                    <Button variant="primary">See Details</Button>
+                  </Link>
+                </Card.Body>
+              </Card>
+            </div>
           );
         })}
       </Row>
